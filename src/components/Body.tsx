@@ -8,12 +8,6 @@ const Body = () => {
 
   const primaryFontWeight: number = 600;
 
-  const flex = {
-    display: "flex",
-
-    justifyContent: "center",
-    alignItems: "center",
-  };
   return (
     <Box p="1rem" my="3rem">
       <Box
