@@ -1,3 +1,5 @@
+import Body from "./Body";
+import Footer from "./Footer";
 import Header from "./Header";
 import { Box } from "@chakra-ui/react";
 
@@ -16,6 +18,8 @@ const Main = () => {
         fontWeight={primaryFontWeight}
         lineHeight={primaryLineheight}>
         <Header />
+        <Body />
+        <Footer />
       </Box>
     </Box>
   );
