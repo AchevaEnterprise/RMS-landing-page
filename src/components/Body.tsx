@@ -92,21 +92,24 @@ const Body = () => {
             border="2px solid black"
             borderRadius="10px"
             textAlign="left">
-            <Text as="h2">About RMS</Text>
-            <Text as="h4">Result Management Sysytem (RMS)</Text>
-            <Text minH="100%">
-              This is a final year project for the department of Mathematics in
-              FUTO. <br />
-              This team consists but not limited to 3 core team members: Daniel
-              Chinemerem (software engineer), Njoku Chigoziem Glory (product
-              designer), Nduagwuike Christopher Obinna (product manager, data
-              analyst) and Dr Nnamdi Araka (project supervisor) <br />
-              <strong>Vision</strong>: To become a leading EdTech in Africa’s
-              startup ecosystem <br />
-              <strong>Mission Statement</strong> : we pride ourselves in
-              interactive EdTech system for academic institutions to process
-              students’ academic performance with ease.
-            </Text>
+            <Box w="70%">
+              <Text as="h2">About RMS</Text>
+              <Text as="h4">Result Management Sysytem (RMS)</Text>
+              <Text>
+                This is a final year project for the department of Mathematics
+                in FUTO. <br />
+                This team consists but not limited to 3 core team members:
+                Daniel Chinemerem (software engineer), Njoku Chigoziem Glory
+                (product designer), Nduagwuike Christopher Obinna (product
+                manager, data analyst) and Dr Nnamdi Araka (project supervisor).{" "}
+                <br /> <br />
+                <strong>Vision</strong>: To become a leading EdTech in Africa’s
+                startup ecosystem. <br /> <br />
+                <strong>Mission Statement</strong> : we pride ourselves in
+                interactive EdTech system for academic institutions to process
+                students’ academic performance with ease.
+              </Text>
+            </Box>
           </Box>
         </Flex>
       </Box>
