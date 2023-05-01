@@ -1,10 +1,13 @@
+import { ChakraProvider } from "@chakra-ui/react";
 import Main from "./components/Main";
+import theme from "./theme";
 
-const borderWidth: string = "2px";
-const secondaryHeaderColor: string = "#37262ABF";
-const buttonBgColor: string = "#F9F1F1";
 function App() {
-  return <Main />;
+  return (
+    <ChakraProvider theme={theme}>
+      <Main />;
+    </ChakraProvider>
+  );
 }
 
 export default App;
