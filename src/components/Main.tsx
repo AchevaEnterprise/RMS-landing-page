@@ -2,6 +2,7 @@ import Body from "./Body";
 import Footer from "./Footer";
 import Header from "./Header";
 import { Box } from "@chakra-ui/react";
+import "@fontsource/rubik";
 
 const Main = () => {
   const bgColor: string = "#F9F1F1";

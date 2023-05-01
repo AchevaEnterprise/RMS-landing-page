@@ -45,14 +45,9 @@ const Header = () => {
       backgroundPosition="center"
       backgroundRepeat="no-repeat"
       backgroundSize="cover">
-      <Flex
-        justifyContent="space-between"
-        alignItems="center"
-        px="1rem"
-        h="10%">
+      <Flex justifyContent="space-between" alignItems="center" px="1rem">
         <Box>
           <Text
-            textDecoration="underline"
             textDecorationLine="overline"
             textDecorationColor={textColor}
             textDecorationThickness=".05"
@@ -87,13 +82,19 @@ const Header = () => {
           </ButtonGroup>
         </Box>
       </Flex>
-      <Box w="40%" m="0 auto" {...flex} flexDir="column">
+      <Flex
+        w="40%"
+        m="0 auto"
+        flexDir="column"
+        h="100%"
+        justifyContent="center"
+        gap="2rem">
         <Text
           textAlign="center"
           as="h2"
           color={textColor}
           fontSize="2rem"
-          fontWeight={700}
+          fontWeight={900}
           lineHeight={2.0}>
           Keep tabs on all your results from the comfort of home
         </Text>
@@ -104,7 +105,7 @@ const Header = () => {
           fontSize="1.5rem"
           fontWeight={500}
           lineHeight={1.7}>
-          Enables all parties involved to manage results with what is fat
+          Enables all parties involved to manage results with <br /> what is fat
           proving an almost seamless approach
         </Text>
         <ButtonGroup {...flex} gap="1rem">
@@ -118,7 +119,7 @@ const Header = () => {
             Create an account
           </Button>
         </ButtonGroup>
-      </Box>
+      </Flex>
     </Box>
   );
 };

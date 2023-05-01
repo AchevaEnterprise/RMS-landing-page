@@ -7,16 +7,26 @@ const Body = () => {
   const textColor: string = "#2C191F";
 
   const primaryFontWeight: number = 600;
+  const flex = {
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+  };
 
   return (
-    <Box p="1rem" my="3rem">
+    <Box p="1rem">
       <Box
+        {...flex}
         border="2px solid black"
         width="100%"
-        m="0 auto"
         textAlign="center"
-        my=".5rem">
-        <Text as="h1" textAlign="center">
+        my=".5rem"
+        p="2rem">
+        <Text
+          as="h1"
+          textAlign="center"
+          fontWeight={primaryFontWeight}
+          fontSize="2rem">
           Mathematics Department's Result Management System of the Federal
           University of Technology Owerri
         </Text>
@@ -33,7 +43,7 @@ const Body = () => {
         wrap="wrap"
         justifyContent="space-evenly"
         textAlign="center"
-        my="2rem">
+        my="4rem">
         <Flex
           flexDir="column"
           border="2px solid black"
