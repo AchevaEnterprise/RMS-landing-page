@@ -1,12 +1,4 @@
-import {
-  Box,
-  Flex,
-  LinkBox,
-  Link,
-  ButtonGroup,
-  Button,
-  Text,
-} from "@chakra-ui/react";
+import { Box, Flex, ButtonGroup, Button, Text } from "@chakra-ui/react";
 import bgImage from "../Images/bg.png";
 
 const Header = () => {
@@ -48,25 +40,17 @@ const Header = () => {
       <Flex justifyContent="space-between" alignItems="center" px="1rem">
         <Box>
           <Text
-            textDecorationLine="overline"
-            textDecorationColor={textColor}
-            textDecorationThickness=".05"
-            textDecorationStyle="solid"
             as="h1"
             fontStyle="revert-layer"
-            fontWeight="900"
-            letterSpacing={9}
+            fontWeight="700"
+            letterSpacing={4}
             fontSize="2.2rem"
-            fontFamily="body"
+            fontFamily="inherit"
             w="auto">
             RMS
           </Text>
         </Box>
-        <LinkBox display="flex" gap="4rem">
-          <Link>Transcript</Link>
-          <Link>Dashboard</Link>
-          <Link>Results</Link>
-        </LinkBox>
+
         <Box>
           <ButtonGroup color={textColor} {...flex}>
             <Button
@@ -109,7 +93,11 @@ const Header = () => {
           proving an almost seamless approach
         </Text>
         <ButtonGroup {...flex} gap="1rem">
-          <Button {...topRightButoonStyles} {...buttonBg} bgColor="none">
+          <Button
+            {...topRightButoonStyles}
+            {...buttonBg}
+            bgColor="none"
+            variant="ghost">
             Request a Demo
           </Button>
           <Button

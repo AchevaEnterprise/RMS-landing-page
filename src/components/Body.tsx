@@ -2,37 +2,39 @@ import { Box, Text, Flex, Image } from "@chakra-ui/react";
 import cash from "../Images/cash.png";
 import chat from "../Images/chat.png";
 import graduate from "../Images/graduate.png";
-import info from "../Images/info.png";
-const Body = () => {
-  const textColor: string = "#2C191F";
 
+const Body = () => {
   const primaryFontWeight: number = 600;
+  const textColor: string = "#2C191F";
+  const borderColor: string = "2px solid black";
+  const borderRadius: string = "10px";
+  const imageWidth: string = "200px";
   const flex = {
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
   };
-
   return (
-    <Box p="1rem">
+    <Box p="1rem" maxW="1000px" m="0 auto">
       <Box
         {...flex}
-        border="2px solid black"
+        border={borderColor}
         width="100%"
         textAlign="center"
-        my=".5rem"
-        p="2rem">
+        my="3rem"
+        p="1rem">
         <Text
           as="h1"
           textAlign="center"
           fontWeight={primaryFontWeight}
           fontSize="2rem">
-          Mathematics Department's Result Management System of the Federal
-          University of Technology Owerri
+          Mathematics Department's Result Management System
         </Text>
       </Box>
       <Box textAlign="center" my="2rem">
-        <Text as="h4"> FEATURED</Text>
+        <Text as="h4" fontWeight="800">
+          FEATURED
+        </Text>
         <Text as="h2">Process and stamp your Transcripts on the go</Text>
         <Text>
           Due to this centralized process, getting a duly stamped transcript
@@ -41,16 +43,17 @@ const Body = () => {
       </Box>
       <Flex
         wrap="wrap"
-        justifyContent="space-evenly"
+        justifyContent="space-between"
+        alignItems="center"
         textAlign="center"
         my="4rem">
         <Flex
           flexDir="column"
           border="2px solid black"
-          borderRadius="10px"
+          borderRadius={borderRadius}
           p="1rem"
           gap="1.2rem">
-          <Image src={cash} alt="cash image" h="auto" w="200px" />
+          <Image src={cash} alt="cash image" h="auto" w={imageWidth} />
           <Box
             as="figcaption"
             textColor={textColor}
@@ -62,10 +65,10 @@ const Body = () => {
         <Flex
           flexDir="column"
           border="2px solid black"
-          borderRadius="10px"
+          borderRadius={borderRadius}
           p="1rem"
           gap="1.2rem">
-          <Image src={graduate} alt="cash image" h="auto" w="200px" />
+          <Image src={graduate} alt="cash image" h="auto" w={imageWidth} />
           <Box
             as="figcaption"
             textColor={textColor}
@@ -76,10 +79,10 @@ const Body = () => {
         <Flex
           flexDir="column"
           border="2px solid black"
-          borderRadius="10px"
+          borderRadius={borderRadius}
           p="1rem"
           gap="1.2rem">
-          <Image src={chat} alt="cash image" h="auto" w="200px" />
+          <Image src={chat} alt="cash image" h="auto" w={imageWidth} />
           <Box
             as="figcaption"
             textColor={textColor}
@@ -89,33 +92,42 @@ const Body = () => {
         </Flex>
       </Flex>
       <Box>
-        <Flex gap="1rem">
-          <Image src={info} alt="Vision" h="auto" maxW="300px" />
-          <Box
-            p=".5rem"
-            border="2px solid black"
-            borderRadius="10px"
-            textAlign="left">
-            <Box w="70%">
-              <Text as="h2">About RMS</Text>
-              <Text as="h4">Result Management Sysytem (RMS)</Text>
-              <Text>
-                This is a final year project for the department of Mathematics
-                in FUTO. <br />
-                This team consists but not limited to 3 core team members:
-                Daniel Chinemerem (software engineer), Njoku Chigoziem Glory
-                (product designer), Nduagwuike Christopher Obinna (product
-                manager, data analyst) and Dr Nnamdi Araka (project supervisor).{" "}
-                <br /> <br />
-                <strong>Vision</strong>: To become a leading EdTech in Africa’s
-                startup ecosystem. <br /> <br />
-                <strong>Mission Statement</strong> : we pride ourselves in
-                interactive EdTech system for academic institutions to process
-                students’ academic performance with ease.
-              </Text>
-            </Box>
+        <Box
+          p=".5rem"
+          my="2.5rem"
+          border="2px solid black"
+          borderRadius={borderRadius}
+          textAlign="left"
+          fontWeight="400">
+          <Box p="1rem">
+            <Text
+              as="h2"
+              fontSize="1.8rem"
+              fontWeight={600}
+              textAlign="center"
+              my=".5rem">
+              About
+            </Text>
+
+            <Text>
+              Our EdTech is an adaptive and intelligent web-based result
+              management system for academic institutions, to process students’
+              academic performance with ease due to unmet needs of result
+              declaration in African universities as it is manually done with
+              extensive human intervention. <br />
+              This team consists but not limited to 3 core team members: Daniel
+              Chinemerem (Software Engineer), Njoku Chigoziem Glory (Product
+              Designer), Nduagwuike Christopher Obinna (Product Manager, data
+              analyst) and Dr Nnamdi Araka (Project Supervisor)
+              <br />
+              <strong>Vision:</strong> To become a leading EdTech in Africa’s
+              startup ecosystem. <br />
+              <strong> Mission Statement</strong>: we pride ourselves in
+              interactive EdTech system for academic institutions to process
+              students’ academic performance with ease.
+            </Text>
           </Box>
-        </Flex>
+        </Box>
       </Box>
     </Box>
   );

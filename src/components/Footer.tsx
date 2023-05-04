@@ -2,9 +2,14 @@ import { Box, Flex, Link, Text } from "@chakra-ui/react";
 
 const Footer = () => {
   return (
-    <Box as="footer" bgColor="#2C191F" textColor="#FDECF3" fontWeight="300">
-      <Flex flexDir="column" alignItems="center" rowGap="5rem" pt="2rem">
-        <Flex gap="6rem">
+    <Box
+      bgColor="#2C191F"
+      textColor="#FDECF3"
+      py="1rem"
+      fontWeight="300"
+      fontSize=".9rem">
+      <Flex flexDir="column" alignItems="center" rowGap="5rem">
+        <Flex gap="6rem" wrap="wrap">
           <Flex flexDir="column">
             <Link>Transcript</Link>
             <Link>Departmental Dues</Link>
