@@ -1,5 +1,18 @@
-import { Box, Flex, ButtonGroup, Button, Text } from "@chakra-ui/react";
+import {
+  Box,
+  Flex,
+  ButtonGroup,
+  Button,
+  Text,
+  Menu,
+  MenuButton,
+  MenuList,
+  MenuItem,
+  IconButton,
+  Link,
+} from "@chakra-ui/react";
 import bgImage from "../Images/bg.png";
+import { HamburgerIcon } from "@chakra-ui/icons";
 
 const Header = () => {
   const textColor: string = "#2C191F";
@@ -29,10 +42,24 @@ const Header = () => {
     borderWidth: borderWidth,
     borderRadius: "10px",
   };
+  const buttonStyles = {
+    ...topRightButoonStyles,
+    border: "none",
+    bg: "none",
+    padding: "8px",
+  };
+
+  const LoginButton = () => <Link {...buttonStyles}>Login</Link>;
+
+  const SignUpButton = () => (
+    <Link {...buttonStyles} variant="outline">
+      Sign Up
+    </Link>
+  );
 
   return (
     <Box
-      h="75vh"
+      h={{ base: "85vh", lg: "75vh" }}
       backgroundImage={`url(${bgImage})`}
       backgroundPosition="center"
       backgroundRepeat="no-repeat"
@@ -51,19 +78,30 @@ const Header = () => {
           </Text>
         </Box>
 
-        <Box>
+        <Box display={{ base: "none", md: "block" }}>
           <ButtonGroup color={textColor} {...flex}>
-            <Button
-              {...topRightButoonStyles}
-              border="none"
-              bg="none"
-              padding="8px">
-              Login
-            </Button>
-            <Button {...topRightButoonStyles} {...buttonBg} variant="outline">
-              Sign Up
-            </Button>
+            <LoginButton />
+            <SignUpButton />
           </ButtonGroup>
+        </Box>
+
+        <Box display={{ base: "block", md: "none" }}>
+          <Menu>
+            <MenuButton
+              as={IconButton}
+              aria-label="Options"
+              icon={<HamburgerIcon />}
+              variant="outline"
+            />
+            <MenuList color={textColor}>
+              <MenuItem>
+                <LoginButton />
+              </MenuItem>
+              <MenuItem>
+                <SignUpButton />
+              </MenuItem>
+            </MenuList>
+          </Menu>
         </Box>
       </Flex>
       <Flex
