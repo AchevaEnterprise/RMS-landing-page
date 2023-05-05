@@ -107,7 +107,7 @@ const Header = () => {
       <Flex
         w={{
           base: "80%",
-          md: "50%",
+          md: "40%",
         }}
         m="0 auto"
         flexDir="column"
