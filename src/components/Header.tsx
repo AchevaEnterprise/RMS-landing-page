@@ -105,7 +105,10 @@ const Header = () => {
         </Box>
       </Flex>
       <Flex
-        w="40%"
+        w={{
+          base: "80%",
+          md: "50%",
+        }}
         m="0 auto"
         flexDir="column"
         h="100%"
@@ -115,8 +118,14 @@ const Header = () => {
           textAlign="center"
           as="h2"
           color={textColor}
-          fontSize="2rem"
-          fontWeight={900}
+          fontSize={{
+            base: "1.4rem",
+            md: "2rem",
+          }}
+          fontWeight={{
+            base: 700,
+            md: 900,
+          }}
           lineHeight={2.0}>
           Keep tabs on all your results from the comfort of home
         </Text>
