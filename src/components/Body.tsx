@@ -16,18 +16,15 @@ const Body = () => {
   };
   return (
     <Box p="1rem" maxW="1000px" m="0 auto">
-      <Box
-        {...flex}
-        border={borderColor}
-        width="100%"
-        textAlign="center"
-        my="3rem"
-        p="1rem">
+      <Box {...flex} border={borderColor} textAlign="center" my="3rem" p="1rem">
         <Text
           as="h1"
           textAlign="center"
           fontWeight={primaryFontWeight}
-          fontSize="2rem">
+          fontSize={{
+            base: "80%",
+            md: "2rem",
+          }}>
           Mathematics Department's Result Management System
         </Text>
       </Box>
