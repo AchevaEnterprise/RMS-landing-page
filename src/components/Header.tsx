@@ -139,21 +139,14 @@ const Header = () => {
           Enables all parties involved to manage results with <br /> what is fat
           proving an almost seamless approach
         </Text>
-        <ButtonGroup {...flex} gap="1rem">
-          <Button
-            {...topRightButoonStyles}
-            {...buttonBg}
-            bgColor="none"
-            variant="ghost">
-            Request a Demo
-          </Button>
-          <Button
-            {...topRightButoonStyles}
-            {...buttonBg}
-            bgColor={buttonBgColor}>
-            Create an account
-          </Button>
-        </ButtonGroup>
+
+        <Button
+          {...topRightButoonStyles}
+          {...buttonBg}
+          bgColor="none"
+          variant="ghost">
+          Create Account
+        </Button>
       </Flex>
     </Box>
   );
