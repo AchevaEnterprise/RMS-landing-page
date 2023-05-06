@@ -10,6 +10,7 @@ import {
   MenuItem,
   IconButton,
   Link,
+  LinkBox,
 } from "@chakra-ui/react";
 import bgImage from "../Images/bg.png";
 import { HamburgerIcon } from "@chakra-ui/icons";
@@ -35,24 +36,10 @@ const Header = () => {
     alignItems: "center",
   };
 
-  const buttonBg = {
-    bgColor: buttonBgColor,
-    px: "8px",
-    py: "5px",
-    borderWidth: borderWidth,
-    borderRadius: "10px",
-  };
-  const buttonStyles = {
-    ...topRightButoonStyles,
-    border: "none",
-    bg: "none",
-    padding: "8px",
-  };
-
-  const LoginButton = () => <Link {...buttonStyles}>Login</Link>;
+  const LoginButton = () => <Link {...topRightButoonStyles}>Login</Link>;
 
   const SignUpButton = () => (
-    <Link {...buttonStyles} variant="outline">
+    <Link variant="outline" {...topRightButoonStyles}>
       Sign Up
     </Link>
   );
@@ -77,9 +64,16 @@ const Header = () => {
             RMS
           </Text>
         </Box>
-
+        <Box as="nav">
+          <LinkBox display="flex" gap="3rem" {...topRightButoonStyles}>
+            <Link>Home</Link>
+            <Link>About</Link>
+            <Link>Blog</Link>
+            <Link>FAQ's</Link>
+          </LinkBox>
+        </Box>
         <Box display={{ base: "none", md: "block" }}>
-          <ButtonGroup color={textColor} {...flex}>
+          <ButtonGroup color={textColor} {...flex} gap="1rem">
             <LoginButton />
             <SignUpButton />
           </ButtonGroup>
@@ -140,13 +134,20 @@ const Header = () => {
           proving an almost seamless approach
         </Text>
 
-        <Button
-          {...topRightButoonStyles}
-          {...buttonBg}
-          bgColor="none"
-          variant="ghost">
-          Create Account
-        </Button>
+        <Box
+          textColor="#FDECF3"
+          textAlign="center"
+          display="inline-block"
+          transition="transform 0.2s ease-in-out"
+          _active={{ transform: "scale(1.1)" }}>
+          <Button
+            bgColor="#DC7F9B"
+            variant="ghost"
+            colorScheme="#DC7F9B"
+            p="12px 28px">
+            Create Account
+          </Button>
+        </Box>
       </Flex>
     </Box>
   );
