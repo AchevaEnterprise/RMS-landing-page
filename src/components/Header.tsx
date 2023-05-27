@@ -12,17 +12,16 @@ import {
   Link,
   LinkBox,
 } from "@chakra-ui/react";
-import bgImage from "../Images/bg.png";
+//import bgImage from "../Images/bg.png";
 import { HamburgerIcon } from "@chakra-ui/icons";
+//import { motion } from "framer-motion";
 
 const Header = () => {
   const textColor: string = "#2C191F";
 
   const primaryFontWeight: number = 600;
   const primaryLineheight: number = 2.06;
-  const borderWidth: string = "2px";
   const secondaryHeaderColor: string = "#37262ABF";
-  const buttonBgColor: string = "#F9F1F1";
 
   const topRightButoonStyles = {
     fontWeight: primaryFontWeight,
@@ -47,10 +46,8 @@ const Header = () => {
   return (
     <Box
       h={{ base: "85vh", lg: "75vh" }}
-      backgroundImage={`url(${bgImage})`}
-      backgroundPosition="center"
-      backgroundRepeat="no-repeat"
-      backgroundSize="cover">
+      bgGradient="linear(to-r, #cf7fdc4d, #dc7f9b4a, #7fdca44d)"
+      overflow="hidden">
       <Flex justifyContent="space-between" alignItems="center" px="1rem">
         <Box>
           <Text
@@ -121,7 +118,29 @@ const Header = () => {
             md: 900,
           }}
           lineHeight={2.0}>
-          Keep tabs on all your results from the comfort of home
+          <Text>Keep tabs on all your results</Text>
+
+          <Flex
+            position="relative"
+            overflow="hidden"
+            fontSize={{
+              base: "1.4rem",
+              md: "2rem",
+            }}>
+            <Text
+              className="first"
+              bgGradient="linear-gradient(90.67deg, #984E66 0%, #DC7F9B 104.03%)"
+              bgClip="text">
+              from the comfort of your home
+            </Text>
+            <Text
+              className="second"
+              bgGradient="linear-gradient(90.67deg, #984E66 0%, #DC7F9B 104.03%)"
+              bgClip="text">
+              with your devices
+            </Text>
+            <br />
+          </Flex>
         </Text>
         <Text
           textAlign="center"
