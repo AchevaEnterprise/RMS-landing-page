@@ -12,7 +12,7 @@ import {
   Link,
   LinkBox,
 } from "@chakra-ui/react";
-//import bgImage from "../Images/bg.png";
+import bgImage from "../Images/Mesh.png";
 import { HamburgerIcon } from "@chakra-ui/icons";
 //import { motion } from "framer-motion";
 
@@ -46,7 +46,9 @@ const Header = () => {
   return (
     <Box
       h={{ base: "85vh", lg: "75vh" }}
-      bgGradient="linear(to-r, #cf7fdc4d, #dc7f9b4a, #7fdca44d)"
+      backgroundImage={bgImage}
+      bgPos="center"
+      bgSize="cover"
       overflow="hidden">
       <Flex justifyContent="space-between" alignItems="center" px="1rem">
         <Box>

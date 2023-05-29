@@ -1,4 +1,9 @@
-import { Box } from "@chakra-ui/react";
+import {
+  Box,
+  CircularProgress,
+  CircularProgressLabel,
+  Flex,
+} from "@chakra-ui/react";
 
 const Body = () => {
   // const primaryFontWeight: number = 600;
@@ -11,7 +16,17 @@ const Body = () => {
   //   justifyContent: "center",
   //   alignItems: "center",
   // };
-  return <Box p="1rem" maxW="1000px" m="0 auto"></Box>;
+  return (
+    <Box p="1rem" maxW="1000px" m="0 auto" fontFamily="inherit">
+      <Box as="section">
+        <Flex fontFamily="inherit">
+          <CircularProgress value={60} color="pink" size="200px">
+            <CircularProgressLabel>60%</CircularProgressLabel>
+          </CircularProgress>
+        </Flex>
+      </Box>
+    </Box>
+  );
 };
 
 export default Body;
