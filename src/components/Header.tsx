@@ -64,7 +64,10 @@ const Header = () => {
           </Text>
         </Box>
         <Box as="nav">
-          <LinkBox display="flex" gap="3rem" {...topRightButoonStyles}>
+          <LinkBox
+            display={{ base: "none", md: "flex" }}
+            gap="3rem"
+            {...topRightButoonStyles}>
             <Link>Home</Link>
             <Link>About</Link>
             <Link>Blog</Link>
@@ -87,6 +90,18 @@ const Header = () => {
               variant="outline"
             />
             <MenuList color={textColor}>
+              <MenuItem>
+                <Link>Home</Link>
+              </MenuItem>
+              <MenuItem>
+                <Link>About</Link>
+              </MenuItem>
+              <MenuItem>
+                <Link>Blog</Link>
+              </MenuItem>
+              <MenuItem>
+                <Link>FAQ's</Link>
+              </MenuItem>
               <MenuItem>
                 <LoginButton />
               </MenuItem>
@@ -155,20 +170,31 @@ const Header = () => {
           proving an almost seamless approach
         </Text>
 
-        <Box
+        <Flex
+          {...flex}
+          wrap="wrap"
+          gap="1rem"
           textColor="#FDECF3"
           textAlign="center"
-          display="inline-block"
-          transition="transform 0.2s ease-in-out"
-          _active={{ transform: "scale(1.1)" }}>
+          transition="transform 0.2s ease-in-out">
+          <Button
+            bgColor="#FDECF3"
+            color="#DC7F9B"
+            variant="ghost"
+            colorScheme="#DC7F9B"
+            p="12px 28px"
+            _active={{ transform: "scale(1.1)" }}>
+            View MVP
+          </Button>
           <Button
             bgColor="#DC7F9B"
             variant="ghost"
             colorScheme="#DC7F9B"
-            p="12px 28px">
+            p="12px 28px"
+            _active={{ transform: "scale(1.1)" }}>
             Create Account
           </Button>
-        </Box>
+        </Flex>
       </Flex>
     </Box>
   );
