@@ -4,9 +4,9 @@ import {
   CircularProgressLabel,
   Flex,
 } from "@chakra-ui/react";
-
+import Offer from "./Offer";
 const Body = () => {
-  // const primaryFontWeight: number = 600;
+  const primaryFontWeight: number = 600;
   const textColor: string = "#2C191F";
   // const borderColor: string = "2px solid black";
   // const borderRadius: string = "10px";
@@ -16,8 +16,14 @@ const Body = () => {
   //   justifyContent: "center",
   //   alignItems: "center",
   // };
+
   return (
-    <Box p="1rem" maxW="1400px" m="0 auto" fontFamily="inherit">
+    <Box
+      p="1rem"
+      maxW="1400px"
+      m="0 auto"
+      fontFamily="inherit"
+      fontWeight={primaryFontWeight}>
       <Box
         as="section"
         py="1rem"
@@ -29,7 +35,7 @@ const Body = () => {
               60%
             </CircularProgressLabel>
           </CircularProgress>
-          <Flex flexDir="column" width="50%" gap="10px">
+          <Flex flexDir="column" width="50%" gap="10px" textColor="#492A34CC">
             <Box as="h4" textAlign="center">
               Fun Fact
             </Box>
@@ -41,6 +47,7 @@ const Body = () => {
           </Flex>
         </Flex>
       </Box>
+      <Offer />
     </Box>
   );
 };
