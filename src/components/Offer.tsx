@@ -11,8 +11,13 @@ import vector4 from "../Images/vector4.png";
 
 const Offer = () => {
   return (
-    <Box color="#492A34">
-      <Text as="h1" textAlign="center" color="inherit">
+    <Box textColor="#492A34" my="2rem">
+      <Text
+        as="h1"
+        textAlign="center"
+        color="inherit"
+        fontWeight={600}
+        fontSize="2rem">
         What we offer
       </Text>
       <Flex alignItems="center" justifyContent="space-between">
@@ -27,6 +32,8 @@ const Offer = () => {
           </Text>
         </Flex>
       </Flex>
+      <Box></Box>
+      <Image src={vector1} alt="direction 1" m="0 auto" />
       <Flex alignItems="center" justifyContent="space-between">
         <Flex flexDir="column" width="50%">
           <Text as="h2">Payment Options</Text>
@@ -39,7 +46,7 @@ const Offer = () => {
           <Image src={creditCard} alt="credit-card" />
         </Flex>
       </Flex>
-
+      <Image src={vector2} alt="direction 2" m="0 auto" />
       <Flex alignItems="center" justifyContent="space-between">
         <Flex>
           <Image src={happy} alt="transcript-happy" />
@@ -51,6 +58,7 @@ const Offer = () => {
           </Text>
         </Flex>
       </Flex>
+      <Image src={vector3} alt="direction 3" m="0 auto" />
       <Flex alignItems="center" justifyContent="space-between">
         <Flex flexDir="column" width="50%">
           <Text as="h2">Error Reduction</Text>
@@ -63,6 +71,7 @@ const Offer = () => {
           <Image src={aluraRemote} alt="alurasearch" />
         </Flex>
       </Flex>
+      <Image src={vector4} alt="direction 4" m="0 auto" />
       <Flex alignItems="center" justifyContent="space-between">
         <Flex>
           <Image src={phone} alt="alurasearch" />

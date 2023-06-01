@@ -19,7 +19,6 @@ const Body = () => {
 
   return (
     <Box
-      p="1rem"
       maxW="1400px"
       m="0 auto"
       fontFamily="inherit"
