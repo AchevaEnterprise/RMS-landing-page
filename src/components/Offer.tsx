@@ -1,3 +1,7 @@
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 import { Box, Flex, Image, Text } from "@chakra-ui/react";
 import alura from "../Images/alura.png";
 import aluraRemote from "../Images/aluraRemote.png";
@@ -10,6 +14,10 @@ import vector3 from "../Images/vector3.png";
 import vector4 from "../Images/vector4.png";
 
 const Offer = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <Box textColor="#492A34" my="2rem">
       <Text
@@ -21,7 +29,7 @@ const Offer = () => {
         What we offer
       </Text>
       <Flex alignItems="center" justifyContent="space-between">
-        <Flex>
+        <Flex data-aos="fade-up">
           <Image src={alura} alt="alurasearch" />
         </Flex>
         <Flex flexDir="column" width="50%">
