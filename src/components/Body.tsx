@@ -18,11 +18,7 @@ const Body = () => {
   // };
 
   return (
-    <Box
-      maxW="1400px"
-      m="0 auto"
-      fontFamily="inherit"
-      fontWeight={primaryFontWeight}>
+    <Box>
       <Box
         as="section"
         py="1rem"
@@ -46,7 +42,13 @@ const Body = () => {
           </Flex>
         </Flex>
       </Box>
-      <Offer />
+      <Box
+        maxW="1400px"
+        m="0 auto"
+        fontFamily="inherit"
+        fontWeight={primaryFontWeight}>
+        <Offer />
+      </Box>
     </Box>
   );
 };
