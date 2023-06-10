@@ -6,6 +6,7 @@ import {
 } from "@chakra-ui/react";
 import Offer from "./Offer";
 import Faqs from "./Faqs";
+import Testimonials from "./Testimonials";
 const Body = () => {
   const primaryFontWeight: number = 600;
   const textColor: string = "#2C191F";
@@ -50,6 +51,7 @@ const Body = () => {
         fontWeight={primaryFontWeight}>
         <Offer />
         <Faqs />
+        <Testimonials />
       </Box>
     </Box>
   );
