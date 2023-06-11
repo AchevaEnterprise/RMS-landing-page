@@ -19,11 +19,12 @@ const Testimonials = () => {
             src={image1}
             alt="300 Level course Rep image"
             w={200}
-            h="auto"
+            h="170"
             bgSize="cover"
+            borderRadius="12px"
           />
-          <Text></Text>
-          <Text></Text>
+          <Text>Deborah Oha</Text>
+          <Text>300L Course Rep</Text>
         </Flex>
         <Flex>
           <Text></Text>
