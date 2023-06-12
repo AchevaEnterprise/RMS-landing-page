@@ -9,38 +9,42 @@ const Testimonials = () => {
       as="section"
       h="75vh"
       w="300vw"
-      py="3rem"
-      px="2rem"
+      //   py="3rem"
+      //   px="2rem"
       bg="radial-gradient(circle, rgba(238,174,202,1) 14%, rgba(222,176,208,1) 34%, rgba(215,97,155,1) 94%)"
       bgRepeat="repeat-x">
       <Flex
-        h="80%"
+        h="60%"
         w="75vw"
         border="4px solid blue"
-        m="auto 0"
+        justifyContent="space-evenly"
+        // m="auto 0"
+        alignItems="center"
         bg="radial-gradient(circle, rgba(238,174,202,.4) 14%, rgba(222,176,208,.4) 34%, rgba(215,97,155,.4) 94%)"
-        gap="2rem">
-        <Flex flexDir="column" gap=".6rem" textAlign="center" w="70%">
+        gap=".2rem">
+        <Flex flexDir="column" gap=".6rem" w="100%" alignItems="center">
           <Image
             src={image1}
             alt="300 Level course Rep image"
-            w={250}
+            w={200}
             h="auto"
             bgSize="cover"
             borderRadius="12px"
-            m="0 auto"
           />
           <Text>Deborah Oha</Text>
           <Text fontWeight="400" fontSize="1rem">
             300L Course Rep
           </Text>
         </Flex>
-        <Flex>
+        <Flex w="60%">
           <Text textColor="teal.600">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda
             ullam dolores deleniti quam suscipit odio atque. Illo cum sequi
             maiores amet iste quos, magnam doloribus alias? Quod asperiores
-            consequuntur ipsa
+            consequuntur ipsa Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Nam quisquam sapiente sit, illo facilis accusantium magni,
+            quos dicta cumque facere fuga, cupiditate saepe quaerat earum
+            blanditiis modi asperiores. Obcaecati, odit.
           </Text>
         </Flex>
       </Flex>
