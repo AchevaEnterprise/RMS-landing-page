@@ -9,6 +9,7 @@ interface TestimonialCardProps {
   caption: string;
   content: string;
 }
+
 const TestimonialCard: React.FC<TestimonialCardProps> = ({
   image,
   name,
@@ -28,7 +29,7 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
           src={image}
           alt="attractive"
           w="250px"
-          // h="200px"
+          //  h="180px"
           borderRadius="40px"
         />
         <Text fontWeight="800" fontSize="1.6rem">
@@ -45,9 +46,10 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
 
 const Testimonials = () => {
   return (
-    <Box as="section" my="1rem">
+    <Box as="section" my="1rem" overflowX="hidden">
       <Heading textAlign="center">What People Saya About Us</Heading>
       <Flex
+        gap="3rem"
         bg="teal.900"
         h="70vh"
         w="200vw"
@@ -59,6 +61,28 @@ const Testimonials = () => {
           image={image1}
           name=" Josephine Simeon"
           caption=" 300L Course Rep"
+          content="  I have used the RMS and it has helped me alot, it makes it easy for
+            me to see and understand my results. I have used the RMS and it has
+            helped me alot, it makes it easy for me to see and understand my
+            results. I have used the RMS and it has helped me alot, it makes it
+            my results. results. I have used the RMS and it has helped me alot,
+            it makes it my results."
+        />
+        <TestimonialCard
+          image={image2}
+          name=" Davis Moyes"
+          caption=" 400L Course Rep"
+          content="  I have used the RMS and it has helped me alot, it makes it easy for
+            me to see and understand my results. I have used the RMS and it has
+            helped me alot, it makes it easy for me to see and understand my
+            results. I have used the RMS and it has helped me alot, it makes it
+            my results. results. I have used the RMS and it has helped me alot,
+            it makes it my results."
+        />
+        <TestimonialCard
+          image={image3}
+          name=" Favour Chris"
+          caption=" 500L Course Rep"
           content="  I have used the RMS and it has helped me alot, it makes it easy for
             me to see and understand my results. I have used the RMS and it has
             helped me alot, it makes it easy for me to see and understand my
