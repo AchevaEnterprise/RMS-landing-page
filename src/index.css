@@ -123,3 +123,6 @@ body {
 .zoom-out {
   animation: zoom-out 1s ease-in-out;
 }
+.header {
+  backdrop-filter: blur(40px);
+}

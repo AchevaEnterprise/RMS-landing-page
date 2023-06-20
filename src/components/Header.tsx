@@ -46,11 +46,15 @@ const Header = () => {
   return (
     <Box
       h={{ base: "85vh", lg: "75vh" }}
-      backgroundImage={bgImage}
-      bgPos="center"
-      bgSize="cover"
-      overflow="hidden">
-      <Flex justifyContent="space-between" alignItems="center" px="1rem">
+      //backgroundImage={bgImage}
+      backgroundImage="linear-gradient(to right, rgba(220, 127, 155,
+        0.3), rgba(207, 127, 220, 0.3), rgba(168, 220, 127, 0.3), rgba(127, 220,
+        164, 0.3), rgba(127, 175, 220, 0.3))">
+      <Flex
+        justifyContent="space-between"
+        alignItems="center"
+        px="1rem"
+        zIndex={10}>
         <Box>
           <Text
             as="h1"
