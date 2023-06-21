@@ -20,8 +20,9 @@ const Body = () => {
   // };
 
   return (
-    <Box>
+    <Box data-scroll-section>
       <Box
+        data-scroll
         as="section"
         py="1rem"
         px="3rem"
@@ -33,7 +34,11 @@ const Body = () => {
             </CircularProgressLabel>
           </CircularProgress>
           <Flex flexDir="column" width="50%" gap="10px" textColor="#492A34CC">
-            <Box as="h4" textAlign="center">
+            <Box
+              as="h4"
+              textAlign="center"
+              textDecor="underline"
+              fontWeight="600">
               Fun Fact
             </Box>
             <Box as="p">
@@ -45,12 +50,14 @@ const Body = () => {
         </Flex>
       </Box>
       <Box
+        data-scroll
         maxW="1400px"
         m="0 auto"
         fontFamily="inherit"
         fontWeight={primaryFontWeight}>
         <Offer />
         <Faqs />
+
         <Testimonials />
       </Box>
     </Box>

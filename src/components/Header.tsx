@@ -12,9 +12,8 @@ import {
   Link,
   LinkBox,
 } from "@chakra-ui/react";
-import bgImage from "../Images/Mesh.png";
+//import bgImage from "../Images/Mesh.png";
 import { HamburgerIcon } from "@chakra-ui/icons";
-//import { motion } from "framer-motion";
 
 const Header = () => {
   const textColor: string = "#2C191F";

@@ -3,6 +3,7 @@ import { Box, Flex, Link, Text } from "@chakra-ui/react";
 const Footer = () => {
   return (
     <Box
+      data-scroll
       bgColor="#2C191F"
       textColor="#FDECF3"
       py="1rem"

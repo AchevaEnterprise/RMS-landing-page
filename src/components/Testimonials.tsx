@@ -48,49 +48,54 @@ const Testimonials = () => {
   return (
     <Box as="section" my="1rem" overflowX="hidden">
       <Heading textAlign="center">What People Saya About Us</Heading>
-      <Flex
-        gap="3rem"
-        bg="teal.900"
-        h="70vh"
-        w="200vw"
-        my="1rem"
-        borderRadius="20px"
-        alignItems="center"
-        px="5rem">
-        <TestimonialCard
-          image={image1}
-          name=" Josephine Simeon"
-          caption=" 300L Course Rep"
-          content="  I have used the RMS and it has helped me alot, it makes it easy for
+      <Box data-scroll-section>
+        <Flex
+          gap="3rem"
+          bg="teal.900"
+          h="70vh"
+          w="200vw"
+          my="1rem"
+          borderRadius="20px"
+          alignItems="center"
+          px="5rem"
+          data-scroll
+          data-scroll-direction="horizontal"
+          data-scroll-speed="9">
+          <TestimonialCard
+            image={image1}
+            name=" Josephine Simeon"
+            caption=" 300L Course Rep"
+            content="  I have used the RMS and it has helped me alot, it makes it easy for
             me to see and understand my results. I have used the RMS and it has
             helped me alot, it makes it easy for me to see and understand my
             results. I have used the RMS and it has helped me alot, it makes it
             my results. results. I have used the RMS and it has helped me alot,
             it makes it my results."
-        />
-        <TestimonialCard
-          image={image2}
-          name=" Davis Moyes"
-          caption=" 400L Course Rep"
-          content="  I have used the RMS and it has helped me alot, it makes it easy for
+          />
+          <TestimonialCard
+            image={image2}
+            name=" Davis Moyes"
+            caption=" 400L Course Rep"
+            content="  I have used the RMS and it has helped me alot, it makes it easy for
             me to see and understand my results. I have used the RMS and it has
             helped me alot, it makes it easy for me to see and understand my
             results. I have used the RMS and it has helped me alot, it makes it
             my results. results. I have used the RMS and it has helped me alot,
             it makes it my results."
-        />
-        <TestimonialCard
-          image={image3}
-          name=" Favour Chris"
-          caption=" 500L Course Rep"
-          content="  I have used the RMS and it has helped me alot, it makes it easy for
+          />
+          <TestimonialCard
+            image={image3}
+            name=" Favour Chris"
+            caption=" 500L Course Rep"
+            content="  I have used the RMS and it has helped me alot, it makes it easy for
             me to see and understand my results. I have used the RMS and it has
             helped me alot, it makes it easy for me to see and understand my
             results. I have used the RMS and it has helped me alot, it makes it
             my results. results. I have used the RMS and it has helped me alot,
             it makes it my results."
-        />
-      </Flex>
+          />
+        </Flex>
+      </Box>
     </Box>
   );
 };
