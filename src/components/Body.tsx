@@ -20,9 +20,10 @@ const Body = () => {
   // };
 
   return (
-    <Box data-scroll-section>
+    <Box>
       <Box
         data-scroll
+        data-scroll-section
         as="section"
         py="1rem"
         px="3rem"
@@ -50,7 +51,6 @@ const Body = () => {
         </Flex>
       </Box>
       <Box
-        data-scroll
         maxW="1400px"
         m="0 auto"
         fontFamily="inherit"

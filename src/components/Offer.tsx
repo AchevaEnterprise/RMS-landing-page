@@ -18,7 +18,7 @@ const Offer = () => {
     Aos.init({ duration: 1000 });
   }, []);
   return (
-    <Box textColor="#492A34" my="2rem" data-scroll>
+    <Box textColor="#492A34" my="2rem">
       <Text
         as="h1"
         textAlign="center"

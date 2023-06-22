@@ -22,7 +22,7 @@ const Faqs = () => {
   };
 
   return (
-    <Box data-scroll>
+    <Box>
       <Text
         as="h2"
         fontWeight={600}

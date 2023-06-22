@@ -46,13 +46,19 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
 
 const Testimonials = () => {
   return (
-    <Box as="section" my="1rem" overflowX="hidden">
+    <Box
+      as="section"
+      my="1rem"
+      // overflowX="hidden"
+      data-scroll-section
+      data-scroll
+      data-scroll-direction="horizontal">
       <Heading textAlign="center">What People Saya About Us</Heading>
-      <Box data-scroll-section>
+      <Box>
         <Flex
           gap="3rem"
           bg="teal.900"
-          h="70vh"
+          h="100vh"
           w="200vw"
           my="1rem"
           borderRadius="20px"
