@@ -46,9 +46,7 @@ const Header = () => {
     <Box
       h={{ base: "85vh", lg: "75vh" }}
       //backgroundImage={bgImage}
-      backgroundImage="linear-gradient(to right, rgba(220, 127, 155,
-        0.3), rgba(207, 127, 220, 0.3), rgba(168, 220, 127, 0.3), rgba(127, 220,
-        164, 0.3), rgba(127, 175, 220, 0.3))">
+    >
       <Flex
         justifyContent="space-between"
         alignItems="center"
@@ -116,88 +114,29 @@ const Header = () => {
         </Box>
       </Flex>
       <Flex
-        w={{
-          base: "80%",
-          md: "40%",
-        }}
-        m="0 auto"
-        flexDir="column"
-        h="100%"
-        justifyContent="center"
-        gap="2rem">
-        <Text
-          textAlign="center"
-          as="h2"
-          color={textColor}
-          fontSize={{
-            base: "1.4rem",
-            md: "2rem",
-          }}
-          fontWeight={{
-            base: 700,
-            md: 900,
-          }}
-          lineHeight={2.0}>
-          <Text>Keep tabs on all your results</Text>
-
-          <Flex
-            position="relative"
-            overflow="hidden"
-            fontSize={{
-              base: "1.4rem",
-              md: "2rem",
-            }}>
-            <Text
-              className="first"
-              bgGradient="linear-gradient(90.67deg, #984E66 0%, #DC7F9B 104.03%)"
-              bgClip="text">
-              from the comfort of your home
-            </Text>
-            <Text
-              className="second"
-              bgGradient="linear-gradient(90.67deg, #984E66 0%, #DC7F9B 104.03%)"
-              bgClip="text">
-              with your devices
-            </Text>
-            <br />
-          </Flex>
-        </Text>
-        <Text
-          textAlign="center"
-          as="h4"
-          color={secondaryHeaderColor}
-          fontSize="1.5rem"
-          fontWeight={500}
-          lineHeight={1.7}>
-          Enables all parties involved to manage results with <br /> what is fat
-          proving an almost seamless approach
-        </Text>
-
-        <Flex
-          {...flex}
-          wrap="wrap"
-          gap="1rem"
-          textColor="#FDECF3"
-          textAlign="center"
-          transition="transform 0.2s ease-in-out">
-          <Button
-            bgColor="#FDECF3"
-            color="#DC7F9B"
-            variant="ghost"
-            colorScheme="#DC7F9B"
-            p="12px 28px"
-            _active={{ transform: "scale(1.1)" }}>
-            View MVP
-          </Button>
-          <Button
-            bgColor="#DC7F9B"
-            variant="ghost"
-            colorScheme="#DC7F9B"
-            p="12px 28px"
-            _active={{ transform: "scale(1.1)" }}>
-            Create Account
-          </Button>
-        </Flex>
+        {...flex}
+        wrap="wrap"
+        gap="1rem"
+        textColor="#FDECF3"
+        textAlign="center"
+        transition="transform 0.2s ease-in-out">
+        <Button
+          bgColor="#FDECF3"
+          color="#DC7F9B"
+          variant="ghost"
+          colorScheme="#DC7F9B"
+          p="12px 28px"
+          _active={{ transform: "scale(1.1)" }}>
+          View MVP
+        </Button>
+        <Button
+          bgColor="#DC7F9B"
+          variant="ghost"
+          colorScheme="#DC7F9B"
+          p="12px 28px"
+          _active={{ transform: "scale(1.1)" }}>
+          Create Account
+        </Button>
       </Flex>
     </Box>
   );
