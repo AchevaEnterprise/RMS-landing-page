@@ -11,6 +11,7 @@ import {
   IconButton,
   Link,
   LinkBox,
+  Heading,
 } from "@chakra-ui/react";
 //import bgImage from "../Images/Mesh.png";
 import { HamburgerIcon } from "@chakra-ui/icons";
@@ -43,15 +44,8 @@ const Header = () => {
   );
 
   return (
-    <Box
-      h={{ base: "85vh", lg: "75vh" }}
-      //backgroundImage={bgImage}
-    >
-      <Flex
-        justifyContent="space-between"
-        alignItems="center"
-        px="1rem"
-        zIndex={10}>
+    <Box h={{ base: "85vh", lg: "75vh" }} bgColor="#2B6777">
+      <Flex justifyContent="space-between" alignItems="center" px="1rem">
         <Box>
           <Text
             as="h1"
@@ -113,30 +107,42 @@ const Header = () => {
           </Menu>
         </Box>
       </Flex>
-      <Flex
-        {...flex}
-        wrap="wrap"
-        gap="1rem"
-        textColor="#FDECF3"
-        textAlign="center"
-        transition="transform 0.2s ease-in-out">
-        <Button
-          bgColor="#FDECF3"
-          color="#DC7F9B"
-          variant="ghost"
-          colorScheme="#DC7F9B"
-          p="12px 28px"
-          _active={{ transform: "scale(1.1)" }}>
-          View MVP
-        </Button>
-        <Button
-          bgColor="#DC7F9B"
-          variant="ghost"
-          colorScheme="#DC7F9B"
-          p="12px 28px"
-          _active={{ transform: "scale(1.1)" }}>
-          Create Account
-        </Button>
+      <Flex justifyContent="left">
+        <Box>
+          <Heading as="h1">
+            Keep tabs on all your results from the comfort of your home
+          </Heading>
+          <Heading as="h3">
+            Enables all parties to manage results with what is fast proving an
+            almost seamless approach
+          </Heading>
+        </Box>
+
+        <Flex
+          {...flex}
+          wrap="wrap"
+          gap="1rem"
+          textColor="#FDECF3"
+          textAlign="center"
+          transition="transform 0.2s ease-in-out">
+          <Button
+            bgColor="#FDECF3"
+            color="#DC7F9B"
+            variant="ghost"
+            colorScheme="#DC7F9B"
+            p="12px 28px"
+            _active={{ transform: "scale(1.1)" }}>
+            View MVP
+          </Button>
+          <Button
+            bgColor="#DC7F9B"
+            variant="ghost"
+            colorScheme="#DC7F9B"
+            p="12px 28px"
+            _active={{ transform: "scale(1.1)" }}>
+            Create Account
+          </Button>
+        </Flex>
       </Flex>
     </Box>
   );
