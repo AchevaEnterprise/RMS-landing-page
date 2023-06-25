@@ -13,12 +13,10 @@ import {
   LinkBox,
   Heading,
 } from "@chakra-ui/react";
-//import bgImage from "../Images/Mesh.png";
+import bgImage from "../Images/HeaderImage.png";
 import { HamburgerIcon } from "@chakra-ui/icons";
 
 const Header = () => {
-  const textColor: string = "#2C191F";
-
   const primaryFontWeight: number = 600;
   const primaryLineheight: number = 2.06;
   const secondaryHeaderColor: string = "#37262ABF";
@@ -26,7 +24,6 @@ const Header = () => {
   const topRightButoonStyles = {
     fontWeight: primaryFontWeight,
     lineHeight: primaryLineheight,
-    color: textColor,
   };
 
   const flex = {
@@ -44,7 +41,12 @@ const Header = () => {
   );
 
   return (
-    <Box h={{ base: "85vh", lg: "75vh" }} bgColor="#2B6777">
+    <Box
+      h={{ base: "85vh", lg: "75vh" }}
+      bgImage={bgImage}
+      color="#FCFCFC"
+      bgSize="cover"
+      backgroundPosition="center">
       <Flex justifyContent="space-between" alignItems="center" px="1rem">
         <Box>
           <Text
@@ -70,7 +72,7 @@ const Header = () => {
           </LinkBox>
         </Box>
         <Box display={{ base: "none", md: "block" }}>
-          <ButtonGroup color={textColor} {...flex} gap="1rem">
+          <ButtonGroup {...flex} gap="1rem">
             <LoginButton />
             <SignUpButton />
           </ButtonGroup>
@@ -84,7 +86,7 @@ const Header = () => {
               icon={<HamburgerIcon />}
               variant="outline"
             />
-            <MenuList color={textColor}>
+            <MenuList>
               <MenuItem>
                 <Link>Home</Link>
               </MenuItem>
@@ -107,27 +109,33 @@ const Header = () => {
           </Menu>
         </Box>
       </Flex>
-      <Flex justifyContent="left">
-        <Box>
-          <Heading as="h1">
+      <Flex
+        px="2rem"
+        justifyContent="center"
+        flexDir="column"
+        alignItems="left"
+        width="45%"
+        height="100%"
+        gap="4rem">
+        <Flex flexDir="column" gap="1.4rem">
+          <Heading as="h1" fontWeight={700} fontSize="3rem">
             Keep tabs on all your results from the comfort of your home
           </Heading>
-          <Heading as="h3">
+          <Heading as="h3" fontSize="1.2rem" fontWeight={500}>
             Enables all parties to manage results with what is fast proving an
             almost seamless approach
           </Heading>
-        </Box>
+        </Flex>
 
         <Flex
-          {...flex}
           wrap="wrap"
           gap="1rem"
-          textColor="#FDECF3"
           textAlign="center"
           transition="transform 0.2s ease-in-out">
           <Button
-            bgColor="#FDECF3"
-            color="#DC7F9B"
+            borderRadius="16px"
+            bgColor="#EDF2F1"
+            color="#36819A"
             variant="ghost"
             colorScheme="#DC7F9B"
             p="12px 28px"
@@ -135,7 +143,9 @@ const Header = () => {
             View MVP
           </Button>
           <Button
-            bgColor="#DC7F9B"
+            borderRadius="16px"
+            bgColor="#36819A"
+            color="#EDF2F1"
             variant="ghost"
             colorScheme="#DC7F9B"
             p="12px 28px"
