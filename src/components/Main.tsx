@@ -13,6 +13,7 @@ const Main = () => {
 
   return (
     <Box
+      className="all"
       bgColor={bgColor}
       textColor={textColor}
       fontSize={fontSize}
