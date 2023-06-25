@@ -21,15 +21,9 @@ const Body = () => {
 
   return (
     <Box>
-      <Box
-        data-scroll
-        data-scroll-section
-        as="section"
-        py="1rem"
-        px="3rem"
-        bgGradient="linear-gradient(270deg, #DC7F9B 0%, #E0B7B7 50.62%, #FDECF3 100%)">
+      <Box as="section" py="1rem" px="3rem" bgColor="#F2F2F2">
         <Flex fontFamily="inherit" justifyContent="space-between" wrap="wrap">
-          <CircularProgress value={60} color="#DC7F9B" size="130px">
+          <CircularProgress value={60} color="#3D6E7B" size="130px">
             <CircularProgressLabel fontWeight={700} color={textColor}>
               60%
             </CircularProgressLabel>
