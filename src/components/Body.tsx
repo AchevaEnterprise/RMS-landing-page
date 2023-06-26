@@ -38,7 +38,7 @@ const Body = () => {
       </Box>
       <Box
         maxW="1400px"
-        // m="0 auto"
+        m="0 auto"
         fontFamily="inherit"
         fontWeight={primaryFontWeight}>
         <Offer />
