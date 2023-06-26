@@ -21,7 +21,6 @@ const Main = () => {
       lineHeight={primaryLineheight}>
       <Header />
       <Body />
-      <Footer />
     </Box>
   );
 };

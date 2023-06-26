@@ -10,17 +10,9 @@ import Testimonials from "./Testimonials";
 const Body = () => {
   const primaryFontWeight: number = 600;
   const textColor: string = "#2C191F";
-  // const borderColor: string = "2px solid black";
-  // const borderRadius: string = "10px";
-  // const imageWidth: string = "200px";
-  // const flex = {
-  //   display: "flex",
-  //   justifyContent: "center",
-  //   alignItems: "center",
-  // };
 
   return (
-    <Box>
+    <Box overflow="hidden">
       <Box as="section" py="1rem" px="3rem" bgColor="#F2F2F2">
         <Flex fontFamily="inherit" justifyContent="space-between" wrap="wrap">
           <CircularProgress value={60} color="#3D6E7B" size="130px">
@@ -46,12 +38,11 @@ const Body = () => {
       </Box>
       <Box
         maxW="1400px"
-        m="0 auto"
+        // m="0 auto"
         fontFamily="inherit"
         fontWeight={primaryFontWeight}>
         <Offer />
         <Faqs />
-
         <Testimonials />
       </Box>
     </Box>

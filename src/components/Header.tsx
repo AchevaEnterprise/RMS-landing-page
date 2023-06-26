@@ -13,13 +13,12 @@ import {
   LinkBox,
   Heading,
 } from "@chakra-ui/react";
-import bgImage from "../Images/HeaderImage.png";
+import bgImage from "../Images/HeaderImage.svg";
 import { HamburgerIcon } from "@chakra-ui/icons";
 
 const Header = () => {
   const primaryFontWeight: number = 600;
   const primaryLineheight: number = 2.06;
-  const secondaryHeaderColor: string = "#37262ABF";
 
   const topRightButoonStyles = {
     fontWeight: primaryFontWeight,
