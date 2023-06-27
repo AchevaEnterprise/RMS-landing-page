@@ -45,7 +45,8 @@ const Header = () => {
       bgImage={bgImage}
       color="#FCFCFC"
       bgSize="cover"
-      backgroundPosition="left">
+      bgRepeat="no-repeat"
+      bgPos="center">
       <Flex justifyContent="space-between" alignItems="center" px="1rem">
         <Box>
           <Text
