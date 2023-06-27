@@ -14,7 +14,7 @@ const Main = () => {
   return (
     <Box
       className="all"
-      bgColor={bgColor}
+      // bgColor={bgColor}
       textColor={textColor}
       fontSize={fontSize}
       fontWeight={primaryFontWeight}
