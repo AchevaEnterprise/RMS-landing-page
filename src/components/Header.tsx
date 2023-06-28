@@ -13,7 +13,7 @@ import {
   LinkBox,
   Heading,
 } from "@chakra-ui/react";
-import bgImage from "../Images/HeaderImage2.svg";
+import bgImage from "../Images/HeaderImage.svg";
 import { HamburgerIcon } from "@chakra-ui/icons";
 
 const Header = () => {

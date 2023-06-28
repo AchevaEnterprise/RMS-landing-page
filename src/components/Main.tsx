@@ -5,7 +5,7 @@ import { Box } from "@chakra-ui/react";
 import "@fontsource/rubik";
 
 const Main = () => {
-  const bgColor: string = "#F9F1F1";
+  const bgColor: string = "#FCFCFC";
   const textColor: string = "#2C191F";
   const fontSize: string = "1.2rem";
   const primaryFontWeight: number = 500;
@@ -14,7 +14,7 @@ const Main = () => {
   return (
     <Box
       className="all"
-      // bgColor={bgColor}
+      bgColor={bgColor}
       textColor={textColor}
       fontSize={fontSize}
       fontWeight={primaryFontWeight}

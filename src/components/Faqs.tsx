@@ -11,14 +11,14 @@ const Faqs = () => {
   const accordionObj = {
     flex: 1,
     py: "1rem",
-    fontWeight: 700,
+    fontWeight: 600,
     fontSize: "1.2rem",
-    textColor: "#747474",
+    textColor: "#091518",
   };
   const accordionPanel = {
     pb: 4,
-    fontWeight: 300,
-    textColor: "#747474",
+    fontWeight: 400,
+    textColor: "#091518",
   };
 
   return (
@@ -31,7 +31,7 @@ const Faqs = () => {
         textAlign="center">
         Frequently asked questions(FAQs)
       </Text>
-      <Accordion allowToggle bgColor="#FDECF3">
+      <Accordion allowToggle bgColor="#F2F2F2">
         <AccordionItem>
           <h2>
             <AccordionButton>
