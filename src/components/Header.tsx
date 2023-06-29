@@ -47,7 +47,11 @@ const Header = () => {
       bgSize="cover"
       bgRepeat="no-repeat"
       bgPos="center">
-      <Flex justifyContent="space-between" alignItems="center" px="1rem">
+      <Flex
+        justifyContent="space-between"
+        alignItems="center"
+        px="1rem"
+        py="1rem">
         <Box>
           <Text
             as="h1"
