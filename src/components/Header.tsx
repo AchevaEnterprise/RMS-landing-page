@@ -42,7 +42,10 @@ const Header = () => {
   return (
     <Box
       h={{ base: "85vh", lg: "75vh" }}
-      bgImage={bgImage}
+      bgImage={{
+        base: "linear-gradient(90.67deg, #984E66 0%, #DC7F9B 104.03%)",
+        lg: bgImage,
+      }}
       color="#FCFCFC"
       bgSize="cover"
       bgRepeat="no-repeat"
@@ -117,15 +120,39 @@ const Header = () => {
         px="2rem"
         justifyContent="center"
         flexDir="column"
-        alignItems="left"
+        alignItems={{
+          base: "center",
+          md: "left",
+        }}
         width="45%"
         height="100%"
-        gap="4rem">
+        gap={{
+          base: "2rem",
+          md: "4rem",
+        }}>
         <Flex flexDir="column" gap="1.4rem">
-          <Heading as="h1" fontWeight={700} fontSize="3rem">
+          <Heading
+            as="h1"
+            fontWeight={{
+              base: 500,
+              md: 700,
+            }}
+            fontSize={{
+              base: "1.6rem",
+              md: "3rem",
+            }}>
             Keep tabs on all your results from the comfort of your home
           </Heading>
-          <Heading as="h3" fontSize="1.2rem" fontWeight={500}>
+          <Heading
+            as="h3"
+            fontSize={{
+              base: ".9rem",
+              md: "1.2rem",
+            }}
+            fontWeight={{
+              base: 300,
+              md: 500,
+            }}>
             Enables all parties to manage results with what is fast proving an
             almost seamless approach
           </Heading>
