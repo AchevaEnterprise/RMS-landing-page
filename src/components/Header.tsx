@@ -43,8 +43,8 @@ const Header = () => {
     <Box
       h={{ base: "85vh", lg: "75vh" }}
       bgImage={{
-        base: "linear-gradient(90.67deg, #984E66 0%, #DC7F9B 104.03%)",
-        lg: bgImage,
+        base: "linear-gradient(90.67deg, #3E6F7C 0%, #2B6777 104.03%)",
+        // lg: bgImage,
       }}
       color="#FCFCFC"
       bgSize="cover"
@@ -121,16 +121,16 @@ const Header = () => {
         justifyContent="center"
         flexDir="column"
         alignItems={{
-          base: "center",
+          base: "left",
           md: "left",
         }}
-        width="45%"
+        width="50%"
         height="100%"
         gap={{
           base: "2rem",
           md: "4rem",
         }}>
-        <Flex flexDir="column" gap="1.4rem">
+        <Flex flexDir="column" gap="1.7rem">
           <Heading
             as="h1"
             fontWeight={{
@@ -161,7 +161,9 @@ const Header = () => {
         <Flex
           wrap="wrap"
           gap="1rem"
-          textAlign="center"
+          // justifyContent="left"
+          align="flex-end"
+          textAlign="left"
           transition="transform 0.2s ease-in-out">
           <Button
             borderRadius="16px"
