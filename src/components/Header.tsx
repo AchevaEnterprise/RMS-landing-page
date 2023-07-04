@@ -41,7 +41,7 @@ const Header = () => {
 
   return (
     <Box
-      h={{ base: "85vh", lg: "75vh" }}
+      h={{ base: "60vh", lg: "75vh" }}
       bgImage={{
         base: "linear-gradient(90.67deg, #3E6F7C 0%, #2B6777 104.03%)",
         lg: bgImage,
@@ -142,7 +142,8 @@ const Header = () => {
             }}
             fontSize={{
               base: "1.6rem",
-              md: "3rem",
+              md: "2rem",
+              lg: "3rem",
             }}>
             Keep tabs on all your results from the comfort of your home
           </Heading>
@@ -164,17 +165,24 @@ const Header = () => {
         <Flex
           wrap="wrap"
           gap="1rem"
-          // justifyContent="left"
+          justifyContent={{
+            base: "center",
+            lg: "left",
+          }}
           align="flex-end"
           textAlign="left"
-          transition="transform 0.2s ease-in-out">
+          transition="transform 0.2s ease-in-out"
+          w="100%">
           <Button
             borderRadius="16px"
             bgColor="#EDF2F1"
             color="#36819A"
             variant="ghost"
             colorScheme="#DC7F9B"
-            p="12px 28px"
+            p={{
+              base: "8px 18px",
+              lg: "12px 28px",
+            }}
             _active={{ transform: "scale(1.1)" }}>
             View MVP
           </Button>
@@ -184,7 +192,10 @@ const Header = () => {
             color="#EDF2F1"
             variant="ghost"
             colorScheme="#DC7F9B"
-            p="12px 28px"
+            p={{
+              base: "12px 18px",
+              lg: "12px 28px",
+            }}
             _active={{ transform: "scale(1.1)" }}>
             Create Account
           </Button>
