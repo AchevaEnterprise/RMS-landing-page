@@ -13,7 +13,7 @@ import {
   LinkBox,
   Heading,
 } from "@chakra-ui/react";
-import bgImage from "../Images/HeaderImage.svg";
+import bgImage from "../Images/bgImage.svg";
 import { HamburgerIcon } from "@chakra-ui/icons";
 
 const Header = () => {
@@ -44,7 +44,7 @@ const Header = () => {
       h={{ base: "85vh", lg: "75vh" }}
       bgImage={{
         base: "linear-gradient(90.67deg, #3E6F7C 0%, #2B6777 104.03%)",
-        // lg: bgImage,
+        lg: bgImage,
       }}
       color="#FCFCFC"
       bgSize="cover"
@@ -54,14 +54,14 @@ const Header = () => {
         justifyContent="space-between"
         alignItems="center"
         px="1rem"
-        py="1rem">
+        py=".5rem">
         <Box>
           <Text
             as="h1"
             fontStyle="revert-layer"
             fontWeight="700"
             letterSpacing={4}
-            fontSize="2.2rem"
+            fontSize={{ base: "1.3rem", lg: "2.2rem" }}
             fontFamily="inherit"
             w="auto">
             RMS
@@ -69,7 +69,7 @@ const Header = () => {
         </Box>
         <Box as="nav">
           <LinkBox
-            display={{ base: "none", md: "flex" }}
+            display={{ base: "none", lg: "flex" }}
             gap="3rem"
             {...topRightButoonStyles}>
             <Link>Home</Link>
@@ -78,14 +78,14 @@ const Header = () => {
             <Link>FAQ's</Link>
           </LinkBox>
         </Box>
-        <Box display={{ base: "none", md: "block" }}>
+        <Box display={{ base: "none", lg: "flex" }}>
           <ButtonGroup {...flex} gap="1rem">
             <LoginButton />
             <SignUpButton />
           </ButtonGroup>
         </Box>
 
-        <Box display={{ base: "block", md: "none" }}>
+        <Box display={{ base: "flex", lg: "none" }}>
           <Menu>
             <MenuButton
               as={IconButton}
@@ -122,20 +122,23 @@ const Header = () => {
         flexDir="column"
         alignItems={{
           base: "left",
-          md: "left",
+          lg: "left",
         }}
-        width="50%"
+        width={{
+          base: "100%",
+          lg: "50%",
+        }}
         height="100%"
         gap={{
           base: "2rem",
-          md: "4rem",
+          lg: "4rem",
         }}>
         <Flex flexDir="column" gap="1.7rem">
           <Heading
             as="h1"
             fontWeight={{
               base: 500,
-              md: 700,
+              lg: 700,
             }}
             fontSize={{
               base: "1.6rem",
