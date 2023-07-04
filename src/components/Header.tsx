@@ -193,7 +193,7 @@ const Header = () => {
             variant="ghost"
             colorScheme="#DC7F9B"
             p={{
-              base: "12px 18px",
+              base: "8px 18px",
               lg: "12px 28px",
             }}
             _active={{ transform: "scale(1.1)" }}>
