@@ -14,13 +14,30 @@ const Body = () => {
   return (
     <Box overflow="hidden">
       <Box as="section" py="1rem" px="3rem" bgColor="#F2F2F2">
-        <Flex fontFamily="inherit" justifyContent="space-between" wrap="wrap">
+        <Flex
+          gap="2rem"
+          fontFamily="inherit"
+          justifyContent={{
+            lg: "space-between",
+          }}
+          alignItems="center"
+          flexDir={{
+            base: "column-reverse",
+            lg: "row",
+          }}>
           <CircularProgress value={60} color="#3D6E7B" size="130px">
             <CircularProgressLabel fontWeight={700} color={textColor}>
               60%
             </CircularProgressLabel>
           </CircularProgress>
-          <Flex flexDir="column" width="50%" gap="10px" textColor="#492A34CC">
+          <Flex
+            flexDir="column"
+            width={{
+              base: "100%",
+              lg: "50%",
+            }}
+            gap="1rem"
+            textColor="#492A34CC">
             <Box
               as="h4"
               textAlign="center"

@@ -13,6 +13,8 @@ import vector2 from "../Images/vector2.png";
 import vector3 from "../Images/vector3.png";
 import vector4 from "../Images/vector4.png";
 
+import { BiSolidChevronsDown } from "react-icons/bi";
+
 const Offer = () => {
   useEffect(function () {
     Aos.init({ duration: 1000 });
@@ -27,45 +29,142 @@ const Offer = () => {
         fontSize="2rem">
         What we offer
       </Text>
-      <Flex alignItems="center" justifyContent="space-between">
-        <Image src={alura} alt="alurasearch" data-aos="fade-right" />
+      <Flex
+        alignItems={{
+          base: "center",
+          lg: "space-between",
+        }}
+        justifyContent="space-between"
+        flexDir={{
+          base: "column",
+          lg: "row",
+        }}>
+        <Image
+          src={alura}
+          alt="alurasearch"
+          data-aos="fade-right"
+          width={{
+            base: "300px",
+            lg: "450px",
+          }}
+          h="auto"
+        />
 
-        <Flex flexDir="column" width="50%" data-aos="fade-left">
-          <Text as="h2">Account Options</Text>
+        <Flex
+          flexDir="column"
+          width={{
+            base: "70%",
+            lg: "50%",
+          }}
+          data-aos="fade-left">
+          <Text as="h2" color="#36819A">
+            Account Options:
+          </Text>
           <Text as="p">
             Pay departmental dues with absolute ease and keep track of the
             financial records online and offline.
           </Text>
         </Flex>
       </Flex>
+      <Box
+        display={{
+          base: "none",
+          lg: "block",
+        }}>
+        <Image
+          src={vector1}
+          alt="direction 1"
+          data-aos="fade-up-left"
+          m="0 auto"
+        />
+      </Box>
+      <Flex
+        my="4rem"
+        data-aos="fade-down"
+        justifyContent="center"
+        display={{
+          base: "flex",
+          lg: "none",
+        }}>
+        <BiSolidChevronsDown size="5rem" color="#36819A" />
+      </Flex>
+      <Flex
+        alignItems={{
+          base: "center",
+          lg: "space-between",
+        }}
+        justifyContent="space-between"
+        flexDir={{
+          base: "column-reverse",
+          lg: "row",
+        }}
+        data-aos="zoom-in-down"
+        width={{
+          base: "70%",
+          lg: "50%",
+        }}>
+        <Text as="h2">Payment Options</Text>
+        <Text as="p">
+          Start your journey with RMS, open an account in your required section
+          and enjoy the journey.
+        </Text>
 
-      <Image
-        src={vector1}
-        alt="direction 1"
-        m="0 auto"
-        data-aos="fade-up-left"
-      />
-      <Flex alignItems="center" justifyContent="space-between">
-        <Flex flexDir="column" width="50%" data-aos="zoom-in-down">
-          <Text as="h2">Payment Options</Text>
-          <Text as="p">
-            Start your journey with RMS, open an account in your required
-            section and enjoy the journey.
-          </Text>
-        </Flex>
         <Flex>
-          <Image src={creditCard} alt="credit-card" data-aos="zoom-in-left" />
+          <Image
+            src={creditCard}
+            alt="credit-card"
+            data-aos="zoom-in-left"
+            width={{
+              base: "300px",
+              lg: "450px",
+            }}
+            h="auto"
+          />
         </Flex>
       </Flex>
-      <Image
-        src={vector2}
-        alt="direction 2"
-        m="0 auto"
-        data-aos="fade-up-left"
-      />
-      <Flex alignItems="center" justifyContent="space-between">
+      <Box
+        display={{
+          base: "none",
+          lg: "block",
+        }}>
+        <Image
+          src={vector2}
+          alt="direction 1"
+          data-aos="fade-up-left"
+          m="0 auto"
+        />
+      </Box>
+      <Flex
+        my="4rem"
+        data-aos="fade-down"
+        justifyContent="center"
+        display={{
+          base: "flex",
+          lg: "none",
+        }}>
+        <BiSolidChevronsDown size="5rem" color="#36819A" />
+      </Flex>
+      <Flex
+        alignItems={{
+          base: "center",
+          lg: "space-between",
+        }}
+        justifyContent="space-between"
+        flexDir={{
+          base: "column",
+          lg: "row",
+        }}>
         <Flex>
-          <Image src={happy} alt="transcript-happy" data-aos="fade-right" />
+          <Image
+            src={happy}
+            alt="transcript-happy"
+            data-aos="fade-right"
+            width={{
+              base: "300px",
+              lg: "450px",
+            }}
+            h="auto"
+          />
         </Flex>
         <Flex flexDir="column" width="50%" data-aos="fade-left">
           <Text as="h2">Transcript</Text>
@@ -74,14 +173,40 @@ const Offer = () => {
           </Text>
         </Flex>
       </Flex>
-      <Image
-        src={vector3}
-        alt="direction 3"
-        m="0 auto"
-        data-aos="fade-up-left"
-      />
-      <Flex alignItems="center" justifyContent="space-between">
-        <Flex flexDir="column" width="50%" data-aos="fade-right">
+      <Box
+        display={{
+          base: "none",
+          lg: "block",
+        }}>
+        <Image
+          src={vector3}
+          alt="direction 1"
+          data-aos="fade-up-left"
+          m="0 auto"
+        />
+      </Box>
+      <Flex
+        my="4rem"
+        data-aos="fade-down"
+        justifyContent="center"
+        display={{
+          base: "flex",
+          lg: "none",
+        }}>
+        <BiSolidChevronsDown size="5rem" color="#36819A" />
+      </Flex>
+      <Flex
+        alignItems={{
+          base: "center",
+          lg: "space-between",
+        }}
+        justifyContent="space-between"
+        flexDir={{
+          base: "column",
+          lg: "row",
+        }}
+        data-aos="fade-right">
+        <Flex>
           <Text as="h2">Error Reduction</Text>
           <Text as="p">
             Our system reduces errors to its barest minimum as grades are
@@ -89,18 +214,61 @@ const Offer = () => {
           </Text>
         </Flex>
         <Flex>
-          <Image src={aluraRemote} alt="alurasearch" data-aos="fade-left" />
+          <Image
+            src={aluraRemote}
+            alt="remote-researcher"
+            data-aos="fade-left"
+            width={{
+              base: "300px",
+              lg: "450px",
+            }}
+            h="auto"
+          />
         </Flex>
       </Flex>
-      <Image
-        src={vector4}
-        alt="direction 4"
-        m="0 auto"
-        data-aos="fade-up-left"
-      />
-      <Flex alignItems="center" justifyContent="space-between">
+      <Box
+        display={{
+          base: "none",
+          lg: "block",
+        }}>
+        <Image
+          src={vector4}
+          alt="direction 1"
+          data-aos="fade-up-left"
+          m="0 auto"
+        />
+      </Box>
+      <Flex
+        my="4rem"
+        data-aos="fade-down"
+        justifyContent="center"
+        display={{
+          base: "flex",
+          lg: "none",
+        }}>
+        <BiSolidChevronsDown size="5rem" color="#36819A" />
+      </Flex>
+      <Flex
+        alignItems={{
+          base: "center",
+          lg: "space-between",
+        }}
+        justifyContent="space-between"
+        flexDir={{
+          base: "column",
+          lg: "row",
+        }}>
         <Flex>
-          <Image src={phone} alt="alurasearch" data-aos="fade-right" />
+          <Image
+            src={phone}
+            alt="phoneIcon"
+            data-aos="fade-right"
+            width={{
+              base: "300px",
+              lg: "450px",
+            }}
+            h="auto"
+          />
         </Flex>
         <Flex flexDir="column" width="50%" data-aos="fade-left">
           <Text as="h2">Chatting features</Text>
