@@ -7,6 +7,7 @@ import {
 import Offer from "./Offer";
 import Faqs from "./Faqs";
 import Testimonials from "./Testimonials";
+import TestimonialsMobile from "./TestimonialsMobile";
 const Body = () => {
   const primaryFontWeight: number = 600;
   const textColor: string = "#2C191F";
@@ -60,7 +61,20 @@ const Body = () => {
         fontWeight={primaryFontWeight}>
         <Offer />
         <Faqs />
-        <Testimonials />
+        <Box
+          display={{
+            base: "none",
+            lg: "flex",
+          }}>
+          <Testimonials />
+        </Box>
+        <Box
+          display={{
+            base: "flex",
+            lg: "none",
+          }}>
+          <TestimonialsMobile />
+        </Box>
       </Box>
     </Box>
   );

@@ -75,7 +75,7 @@ const Testimonials = () => {
     };
   }, []);
   return (
-    <Box as="section" my="1rem" overflowX="hidden">
+    <Box as="section" my="2rem" overflowX="hidden">
       <Heading textAlign="center">What People Say About Us</Heading>
       <Box ref={triggerRef}>
         <Flex

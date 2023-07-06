@@ -183,7 +183,11 @@ const Header = () => {
               base: "8px 18px",
               lg: "12px 28px",
             }}
-            _active={{ transform: "scale(1.1)" }}>
+            _active={{ transform: "scale(1.1)" }}
+            _hover={{
+              // textColor: "#EDF2F1",
+              bgColor: "#c9c9c7",
+            }}>
             View MVP
           </Button>
           <Button
