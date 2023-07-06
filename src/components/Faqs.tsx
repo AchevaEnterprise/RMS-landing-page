@@ -24,9 +24,13 @@ const Faqs = () => {
   return (
     <Box>
       <Text
+        my="2rem"
         as="h2"
         fontWeight={600}
-        fontSize="2rem"
+        fontSize={{
+          base: "1.5rem",
+          lg: "2rem",
+        }}
         py=".4rem"
         textAlign="center">
         Frequently asked questions(FAQs)

@@ -26,7 +26,10 @@ const Offer = () => {
         textAlign="center"
         color="inherit"
         fontWeight={600}
-        fontSize="2rem">
+        fontSize={{
+          base: "1.5rem",
+          lg: "2rem",
+        }}>
         What we offer
       </Heading>
 

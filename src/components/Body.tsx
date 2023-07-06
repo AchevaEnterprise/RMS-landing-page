@@ -12,7 +12,7 @@ const Body = () => {
   const textColor: string = "#2C191F";
 
   return (
-    <Box overflow="hidden">
+    <Box overflow="hidden" px="2rem">
       <Box as="section" py="1rem" px="3rem" bgColor="#F2F2F2">
         <Flex
           gap="2rem"
