@@ -39,7 +39,7 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
           {caption}
         </Text>
       </Flex>
-      <Text w="60%" fontSize="1.2rem" fontWeight="400">
+      <Text w="100%" fontSize="1.2rem" fontWeight="400">
         {content}
       </Text>
     </Flex>
