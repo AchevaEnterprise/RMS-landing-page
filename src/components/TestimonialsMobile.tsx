@@ -19,7 +19,7 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
     <Flex
       p="1rem"
       flex={1}
-      bg="blue.200"
+      flexDir="column"
       w="100%"
       gap="2rem"
       alignItems="center"
