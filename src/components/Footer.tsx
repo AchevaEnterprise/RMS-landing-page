@@ -1,19 +1,25 @@
-import { Box, Flex, Link, Text } from "@chakra-ui/react";
+import { Flex, Link, Text } from "@chakra-ui/react";
 
 const Footer = () => {
   return (
-    <Box
-      h="25vh"
+    <Flex
+      flexDir="column"
+      gap="4rem"
       bgColor="#3E6F7C"
       textColor="#FDECF3"
       p="2rem"
       fontWeight="300"
       fontSize=".9rem">
-      <Flex justifyContent="space-between">
+      <Flex
+        justifyContent="space-between"
+        gap={{
+          base: "4rem",
+          lg: "0",
+        }}>
         <Text fontSize="1.2rem" fontWeight="600">
           RMS
         </Text>
-        <Flex flexDir="column" alignItems="center" rowGap="5rem">
+        <Flex flexDir="column" alignItems="center" rowGap="5rem" wrap="wrap">
           <Flex gap="6rem" wrap="wrap">
             <Flex flexDir="column">
               <Link>Chat</Link>
@@ -30,15 +36,10 @@ const Footer = () => {
           </Flex>
         </Flex>
       </Flex>
-      <Flex
-        position="absolute"
-        bottom="4"
-        left="45%"
-        translateX="-50%"
-        translateY="-50%">
+      <Flex justifyContent="center">
         <Text>All Rights Reserved &copy; 2023</Text>
       </Flex>
-    </Box>
+    </Flex>
   );
 };
 

@@ -12,9 +12,10 @@ import {
   Link,
   LinkBox,
   Heading,
+  Image,
 } from "@chakra-ui/react";
-import bgImage from "../Images/bgImage.svg";
 import { HamburgerIcon } from "@chakra-ui/icons";
+import HeaderSVG from "../Images/HeaderSVG.svg";
 
 const Header = () => {
   const primaryFontWeight: number = 600;
@@ -42,10 +43,7 @@ const Header = () => {
   return (
     <Box
       h={{ base: "60vh", lg: "75vh" }}
-      bgImage={{
-        base: "linear-gradient(90.67deg, #3E6F7C 0%, #2B6777 104.03%)",
-        lg: bgImage,
-      }}
+      bgImage="linear-gradient(90.67deg, #3E6F7C 0%, #2B6777 104.03%)"
       color="#FCFCFC"
       bgSize="cover"
       bgRepeat="no-repeat"
@@ -116,6 +114,7 @@ const Header = () => {
           </Menu>
         </Box>
       </Flex>
+
       <Flex
         px="2rem"
         justifyContent="center"
@@ -161,7 +160,6 @@ const Header = () => {
             almost seamless approach
           </Heading>
         </Flex>
-
         <Flex
           wrap="wrap"
           gap="1rem"
@@ -204,6 +202,14 @@ const Header = () => {
             Create Account
           </Button>
         </Flex>
+
+        {/* <Flex
+          display={{
+            base: "none",
+            lg: "flex",
+          }}>
+          <Image src={HeaderSVG} alt="certificate" height="inherit" />
+        </Flex> */}
       </Flex>
     </Box>
   );

@@ -13,7 +13,7 @@ const Body = () => {
   const textColor: string = "#2C191F";
 
   return (
-    <Box overflow="hidden" px="2rem">
+    <Box overflow="hidden">
       <Box as="section" py="1rem" px="3rem" bgColor="#F2F2F2">
         <Flex
           gap="2rem"
@@ -57,6 +57,7 @@ const Body = () => {
       <Box
         maxW="1400px"
         m="0 auto"
+        px="2rem"
         fontFamily="inherit"
         fontWeight={primaryFontWeight}>
         <Offer />
