@@ -15,7 +15,7 @@ import {
   Image,
 } from "@chakra-ui/react";
 import { HamburgerIcon } from "@chakra-ui/icons";
-import HeaderSVG from "../Images/HeaderSVG.svg";
+import HeaderSVG from "../Images/education.svg";
 
 const Header = () => {
   const primaryFontWeight: number = 600;
@@ -202,6 +202,16 @@ const Header = () => {
             Create Account
           </Button>
         </Flex>
+        <Box
+          pos="absolute"
+          right="5%"
+          w="500px"
+          display={{
+            base: "none",
+            lg: "block",
+          }}>
+          <Image src={HeaderSVG} />
+        </Box>
       </Flex>
     </Box>
   );
