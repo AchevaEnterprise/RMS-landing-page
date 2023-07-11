@@ -5,6 +5,7 @@ import image3 from "../Images/smile-2.jpg";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { useEffect, useRef } from "react";
+import arrow from "../Images/arrow.gif";
 
 interface TestimonialCardProps {
   image: string;
@@ -101,6 +102,7 @@ const Testimonials = () => {
             my results. results. I have used the RMS and it has helped me alot,
             it makes it my results."
           />
+          <Image src={arrow} alt="direction" w="70px" />
           <TestimonialCard
             image={image2}
             name=" Davis Moyes"
@@ -112,6 +114,7 @@ const Testimonials = () => {
             my results. results. I have used the RMS and it has helped me alot,
             it makes it my results."
           />
+          <Image src={arrow} alt="direction" w="70px" />
           <TestimonialCard
             image={image3}
             name=" Favour Chris"

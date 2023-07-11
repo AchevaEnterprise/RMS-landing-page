@@ -202,14 +202,6 @@ const Header = () => {
             Create Account
           </Button>
         </Flex>
-
-        {/* <Flex
-          display={{
-            base: "none",
-            lg: "flex",
-          }}>
-          <Image src={HeaderSVG} alt="certificate" height="inherit" />
-        </Flex> */}
       </Flex>
     </Box>
   );
