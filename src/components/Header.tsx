@@ -32,17 +32,26 @@ const Header = () => {
     alignItems: "center",
   };
 
-  const LoginButton = () => <Link {...topRightButoonStyles}>Login</Link>;
+  const LoginButton = () => (
+    <Link
+      {...topRightButoonStyles}
+      href="https://final-year-project-rms.vercel.app/">
+      Login
+    </Link>
+  );
 
   const SignUpButton = () => (
-    <Link variant="outline" {...topRightButoonStyles}>
+    <Link
+      variant="outline"
+      {...topRightButoonStyles}
+      href="https://final-year-project-rms.vercel.app/">
       Sign Up
     </Link>
   );
 
   return (
     <Box
-      h={{ base: "60vh", lg: "75vh" }}
+      h={{ base: "70vh", lg: "80vh" }}
       bgImage="linear-gradient(90.67deg, #3E6F7C 0%, #2B6777 104.03%)"
       color="#FCFCFC"
       bgSize="cover"
@@ -86,28 +95,29 @@ const Header = () => {
         <Box display={{ base: "flex", lg: "none" }}>
           <Menu>
             <MenuButton
+              colorScheme="green.900"
               as={IconButton}
               aria-label="Options"
               icon={<HamburgerIcon />}
               variant="outline"
             />
-            <MenuList>
-              <MenuItem>
+            <MenuList bgColor="teal.700">
+              <MenuItem bgColor="teal.900 ">
                 <Link>Home</Link>
               </MenuItem>
-              <MenuItem>
+              <MenuItem bgColor="teal.900">
                 <Link>About</Link>
               </MenuItem>
-              <MenuItem>
+              <MenuItem bgColor="teal.900">
                 <Link>Blog</Link>
               </MenuItem>
-              <MenuItem>
+              <MenuItem bgColor="teal.900">
                 <Link>FAQ's</Link>
               </MenuItem>
-              <MenuItem>
+              <MenuItem bgColor="teal.900">
                 <LoginButton />
               </MenuItem>
-              <MenuItem>
+              <MenuItem bgColor="teal.900">
                 <SignUpButton />
               </MenuItem>
             </MenuList>
@@ -171,36 +181,40 @@ const Header = () => {
           textAlign="left"
           transition="transform 0.2s ease-in-out"
           w="100%">
-          <Button
-            borderRadius="16px"
-            bgColor="#EDF2F1"
-            color="#36819A"
-            variant="ghost"
-            colorScheme="#DC7F9B"
-            p={{
-              base: "8px 18px",
-              lg: "12px 28px",
-            }}
-            _active={{ transform: "scale(1.1)" }}
-            _hover={{
-              // textColor: "#EDF2F1",
-              bgColor: "#c9c9c7",
-            }}>
-            View MVP
-          </Button>
-          <Button
-            borderRadius="16px"
-            bgColor="#36819A"
-            color="#EDF2F1"
-            variant="ghost"
-            colorScheme="#DC7F9B"
-            p={{
-              base: "8px 18px",
-              lg: "12px 28px",
-            }}
-            _active={{ transform: "scale(1.1)" }}>
-            Create Account
-          </Button>
+          <Link href="https://the-grader.netlify.app/" isExternal>
+            <Button
+              borderRadius="16px"
+              bgColor="#EDF2F1"
+              color="#36819A"
+              variant="ghost"
+              colorScheme="#DC7F9B"
+              p={{
+                base: "8px 18px",
+                lg: "12px 28px",
+              }}
+              _active={{ transform: "scale(1.1)" }}
+              _hover={{
+                // textColor: "#EDF2F1",
+                bgColor: "#c9c9c7",
+              }}>
+              View MVP
+            </Button>
+          </Link>
+          <Link href="https://final-year-project-rms.vercel.app/ isExternal">
+            <Button
+              borderRadius="16px"
+              bgColor="#36819A"
+              color="#EDF2F1"
+              variant="ghost"
+              colorScheme="#DC7F9B"
+              p={{
+                base: "8px 18px",
+                lg: "12px 28px",
+              }}
+              _active={{ transform: "scale(1.1)" }}>
+              Create Account
+            </Button>
+          </Link>
         </Flex>
         <Box
           pos="absolute"
