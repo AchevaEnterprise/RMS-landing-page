@@ -101,7 +101,7 @@ const Header = () => {
               icon={<HamburgerIcon />}
               variant="outline"
             />
-            <MenuList bgColor="teal.700">
+            <MenuList bgColor="teal.900">
               <MenuItem bgColor="teal.900 ">
                 <Link>Home</Link>
               </MenuItem>
