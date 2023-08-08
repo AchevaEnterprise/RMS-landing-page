@@ -137,12 +137,12 @@ const Header = () => {
           base: "100%",
           lg: "50%",
         }}
-        height="100%"
+        height="90%"
         gap={{
           base: "2rem",
           lg: "4rem",
         }}>
-        <Flex flexDir="column" gap="1.7rem">
+        <Flex flexDir="column" gap="1.7rem" fontFamily="sans-serif">
           <Heading
             as="h1"
             fontWeight={{
