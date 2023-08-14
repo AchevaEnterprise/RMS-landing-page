@@ -200,7 +200,7 @@ const Header = () => {
               View MVP
             </Button>
           </Link>
-          <Link href="https://final-year-project-rms.vercel.app/ isExternal">
+          <Link href="https://final-year-project-rms.vercel.app">
             <Button
               borderRadius="16px"
               bgColor="#36819A"

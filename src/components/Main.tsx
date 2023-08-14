@@ -6,9 +6,9 @@ import "@fontsource/rubik";
 
 const Main = () => {
   const bgColor: string = "#FCFCFC";
-  const textColor: string = "#2C191F";
+  const textColor: string = "#091518";
   const fontSize: string = "1.2rem";
-  const primaryFontWeight: number = 500;
+  const primaryFontWeight: number = 300;
   const primaryLineheight: number = 1.5;
 
   return (

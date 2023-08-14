@@ -22,7 +22,7 @@ const Faqs = () => {
   };
 
   return (
-    <Box my="2rem">
+    <Box my="2rem" textColor="#091518">
       <Text
         my="2rem"
         as="h2"

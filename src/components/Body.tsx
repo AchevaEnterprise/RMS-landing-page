@@ -11,9 +11,10 @@ import TestimonialsMobile from "./TestimonialsMobile";
 const Body = () => {
   const primaryFontWeight: number = 600;
   const textColor: string = "#2C191F";
+  const colorText: string = "#091518";
 
   return (
-    <Box overflow="hidden">
+    <Box overflow="hidden" textColor={colorText}>
       <Box as="section" py="1rem" px="3rem" bgColor="#F2F2F2">
         <Flex
           gap="2rem"
@@ -37,8 +38,7 @@ const Body = () => {
               base: "100%",
               lg: "50%",
             }}
-            gap="1rem"
-            textColor="#492A34CC">
+            gap="1rem">
             <Box
               as="h4"
               textAlign="center"
