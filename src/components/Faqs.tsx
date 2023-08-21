@@ -5,20 +5,19 @@ import {
   AccordionPanel,
   AccordionIcon,
   Box,
-  Text,
   Heading,
 } from "@chakra-ui/react";
 const Faqs = () => {
   const accordionObj = {
     flex: 1,
     py: "1rem",
-    fontWeight: 600,
+    fontWeight: 500,
     fontSize: "1.2rem",
     textColor: "#091518",
   };
   const accordionPanel = {
     pb: 4,
-    fontWeight: 400,
+    fontWeight: 300,
     textColor: "#091518",
   };
 
@@ -41,16 +40,14 @@ const Faqs = () => {
           <h2>
             <AccordionButton>
               <Box as="span" {...accordionObj} textAlign="left">
-                Is this a trend?
+                How can I access my results?
               </Box>
               <AccordionIcon />
             </AccordionButton>
           </h2>
           <AccordionPanel {...accordionPanel}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
+            Navigate to the results and select a sememster of your chloice in
+            that academic year. Clock to view. It’s mazing, right!
           </AccordionPanel>
         </AccordionItem>
 
@@ -58,64 +55,54 @@ const Faqs = () => {
           <h2>
             <AccordionButton>
               <Box as="span" {...accordionObj} textAlign="left">
-                Is this a trend?
+                Can I access historical data on my results for research or
+                personal reference?
+              </Box>
+              <AccordionIcon />
+            </AccordionButton>
+          </h2>
+          <AccordionPanel {...accordionPanel}>Yes you can!</AccordionPanel>
+        </AccordionItem>
+        <AccordionItem>
+          <h2>
+            <AccordionButton>
+              <Box as="span" {...accordionObj} textAlign="left">
+                How do I get my tranacripts?
               </Box>
               <AccordionIcon />
             </AccordionButton>
           </h2>
           <AccordionPanel {...accordionPanel}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
+            Login into your account, access your dashboard, go to transcripts
+            and select your preferred academic year and click on download
           </AccordionPanel>
         </AccordionItem>
         <AccordionItem>
           <h2>
             <AccordionButton>
               <Box as="span" {...accordionObj} textAlign="left">
-                Is this a trend?
+                Can I pay my departmental dues? How?
               </Box>
               <AccordionIcon />
             </AccordionButton>
           </h2>
           <AccordionPanel {...accordionPanel}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
+            Payment of departmental dues is simple. Login into your account,from
+            your dashboard access your Payments and follow the instructions.
           </AccordionPanel>
         </AccordionItem>
         <AccordionItem>
           <h2>
             <AccordionButton>
               <Box as="span" {...accordionObj} textAlign="left">
-                Is this a trend?
+                Are all lecturers registered on this platform?{" "}
               </Box>
               <AccordionIcon />
             </AccordionButton>
           </h2>
           <AccordionPanel {...accordionPanel}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
-          </AccordionPanel>
-        </AccordionItem>
-        <AccordionItem>
-          <h2>
-            <AccordionButton>
-              <Box as="span" {...accordionObj} textAlign="left">
-                Is this a trend?
-              </Box>
-              <AccordionIcon />
-            </AccordionButton>
-          </h2>
-          <AccordionPanel {...accordionPanel}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
+            No. Only level course adcisers, course coordinators, the Head of
+            Department, and the Dean.
           </AccordionPanel>
         </AccordionItem>
       </Accordion>
