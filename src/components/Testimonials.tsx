@@ -24,7 +24,7 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
     <Flex
       h="50%"
       bg="blue.200"
-      w="70%"
+      w="50%"
       gap="2rem"
       alignItems="center"
       justifyContent="center">
@@ -36,14 +36,14 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
           //  h="180px"
           borderRadius="40px"
         />
-        <Text fontWeight="800" fontSize="1.6rem">
+        <Text fontWeight="500" fontSize="1.5rem">
           {name}
         </Text>
-        <Text fontSize="1rem" fontWeight="500">
+        <Text fontSize="1rem" fontWeight="300">
           {caption}
         </Text>
       </Flex>
-      <Text w="60%">{content}</Text>
+      <Text w="55%">{content}</Text>
     </Flex>
   );
 };
@@ -65,7 +65,7 @@ const Testimonials = () => {
         scrollTrigger: {
           trigger: triggerRef.current,
           start: "top top",
-          end: "2000 top",
+          end: "3000 top",
           scrub: 0.6,
           pin: true,
         },
@@ -76,7 +76,7 @@ const Testimonials = () => {
     };
   }, []);
   return (
-    <Box as="section" my="2rem" overflowX="hidden">
+    <Box as="section" my="5rem" overflowX="hidden">
       <Heading textAlign="center">What People Say About Us</Heading>
       <Box ref={triggerRef}>
         <Flex

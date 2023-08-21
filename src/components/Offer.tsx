@@ -20,7 +20,7 @@ const Offer = () => {
     Aos.init({ duration: 1000 });
   }, []);
   return (
-    <Box textColor="#091518" my="2rem">
+    <Box textColor="#091518" my="5rem">
       <Heading
         as="h1"
         textAlign="center"
@@ -62,7 +62,7 @@ const Offer = () => {
             lg: "50%",
           }}
           data-aos="fade-left">
-          <Text as="h2" color="#36819A">
+          <Text as="h2" fontWeight="600">
             Account Options:
           </Text>
           <Text as="p">
@@ -123,7 +123,7 @@ const Offer = () => {
             lg: "50%",
           }}
           data-aos="fade-left">
-          <Text as="h2" color="#36819A">
+          <Text as="h2" fontWeight="600">
             Payment Options:
           </Text>
           <Text as="p">
@@ -184,7 +184,7 @@ const Offer = () => {
             lg: "50%",
           }}
           data-aos="fade-left">
-          <Text as="h2" color="#36819A">
+          <Text as="h2" fontWeight="600">
             Transcript:
           </Text>
           <Text as="p">
@@ -244,7 +244,7 @@ const Offer = () => {
             lg: "50%",
           }}
           data-aos="fade-left">
-          <Text as="h2" color="#36819A">
+          <Text as="h2" fontWeight="600">
             Error Reduction:
           </Text>
           <Text as="p">
@@ -305,7 +305,7 @@ const Offer = () => {
             lg: "50%",
           }}
           data-aos="fade-left">
-          <Text as="h2" color="#36819A">
+          <Text as="h2" fontWeight="600">
             Chatting features:
           </Text>
           <Text as="p">

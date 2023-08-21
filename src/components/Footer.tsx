@@ -3,11 +3,12 @@ import { Flex, Link, Text } from "@chakra-ui/react";
 const Footer = () => {
   return (
     <Flex
+      mt="4rem"
       flexDir="column"
       gap="4rem"
       bgColor="#3E6F7C"
       textColor="#FDECF3"
-      p="2rem"
+      p="4rem"
       fontWeight="300"
       fontSize=".9rem">
       <Flex
@@ -36,7 +37,7 @@ const Footer = () => {
           </Flex>
         </Flex>
       </Flex>
-      <Flex justifyContent="center">
+      <Flex justifyContent="center" mt="1rem">
         <Text>All Rights Reserved &copy; 2023</Text>
       </Flex>
     </Flex>

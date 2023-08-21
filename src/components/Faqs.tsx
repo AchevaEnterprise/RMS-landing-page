@@ -6,6 +6,7 @@ import {
   AccordionIcon,
   Box,
   Text,
+  Heading,
 } from "@chakra-ui/react";
 const Faqs = () => {
   const accordionObj = {
@@ -22,11 +23,11 @@ const Faqs = () => {
   };
 
   return (
-    <Box my="2rem" textColor="#091518">
-      <Text
+    <Box my="5rem" textColor="#091518">
+      <Heading
         my="2rem"
         as="h2"
-        fontWeight={600}
+        fontWeight="600"
         fontSize={{
           base: "1.5rem",
           lg: "2rem",
@@ -34,7 +35,7 @@ const Faqs = () => {
         py=".4rem"
         textAlign="center">
         Frequently asked questions(FAQs)
-      </Text>
+      </Heading>
       <Accordion allowToggle bgColor="#F2F2F2">
         <AccordionItem>
           <h2>

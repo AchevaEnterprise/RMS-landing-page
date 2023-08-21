@@ -144,6 +144,7 @@ const Header = () => {
         }}>
         <Flex flexDir="column" gap="1.7rem" fontFamily="sans-serif">
           <Heading
+            letterSpacing={2}
             as="h1"
             fontWeight={{
               base: 500,

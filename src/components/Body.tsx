@@ -9,7 +9,7 @@ import Faqs from "./Faqs";
 import Testimonials from "./Testimonials";
 import TestimonialsMobile from "./TestimonialsMobile";
 const Body = () => {
-  const primaryFontWeight: number = 600;
+  const primaryFontWeight: number = 400;
   const textColor: string = "#2C191F";
   const colorText: string = "#091518";
 
